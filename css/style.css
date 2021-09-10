@@ -40,6 +40,21 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 0 0;
+    margin: 0rem;
+}
+.signature {
+    padding: 0rem;
+    margin: 0rem;
+    font-family: 'WindSong', cursive;
+    font-size: 2rem;
+}
 nav a {
     text-decoration: none;
     font-size: 20px;
@@ -65,7 +80,7 @@ nav a:hover {
 nav ul {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
@@ -80,10 +95,6 @@ section article {
     border: 5px solid black;
     margin: 0;
     padding: 0;
-}
-
-section article p {
-    /* background-color: whitesmoke; */
 }
 
 article:after {
