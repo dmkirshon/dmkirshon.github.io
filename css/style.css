@@ -238,6 +238,7 @@ header {
 
 .intro__img{
     box-shadow: var(--bs);
+    background-color: var(--clr-light);
 }
 
 @media (min-width: 600px) {
@@ -444,6 +445,10 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-item-individual p {
