@@ -1,305 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kirshon's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css"
-    />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirshon's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css" />
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@400;900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <img src="img/logo_kirshon.jpg" alt="logo" />
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">My Work</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>David Kirshon</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">web developer</p>
-      <img
-        src="img/Intro_David_square.jpg"
-        alt="Image of David's head"
-        class="intro__img"
-      />
-    </section>
-
-    <!-- My Work -->
-
-    <section class="my-work" id="work">
-      <h2 class="section_title--work">My Work</h2>
-      <p class="section__subtitle--work">A selection of my projects</p>
-
-      <div class="portfolio">
-        <!-- Portfolio item 01 -->
-        <div class="portfolio__item">
-          <h3 class="portfolio__title">Where's Narwhal</h3>
-          <div class="portfolio__description">
-            <img
-              src="img/narwhal-demo.gif"
-              alt="Where's Narwhal"
-              class="portfolio__img"
-            />
-            <div class="portfolio__summary">
-              <h4>Project Features</h4>
-              <ul class="portfolio__summary--list">
-                <li class="portfolio__summary--item">
-                  User interactive dynamic character identification list
-                  utilizing React state hooks
-                </li>
-                <li class="portfolio__summary--item">
-                  Time tracking with JavaScript Date object and React
-                  effect/state hooks
-                </li>
-                <li class="portfolio__summary--item">
-                  High score display and logging using Cloud Firestore Database
-                  and array filtering
-                </li>
-                <li class="portfolio__summary--item">
-                  Character coordinate verification using Firestore and viewport
-                  dimensions
-                </li>
-                <li class="portfolio__summary--item">
-                  Image stored in file storage fetched with Firebase Cloud
-                  Storage API
-                </li>
-              </ul>
-              <div class="portfolio__source">
-                <a href="" class="portfolio__code btn">Code</a>
-                <a href="" class="portfolio__demo btn">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio item 02 -->
-        <div class="portfolio__item">
-          <h3 class="portfolio__title">Shopping Cart</h3>
-          <div class="portfolio__description">
-            <div class="portfolio__summary">
-              <h4>Project Features</h4>
-              <ul class="portfolio__summary--list">
-                <li class="portfolio__summary--item">
-                  Page routing for products, listings and shopping cart using
-                  React Router
-                </li>
-                <li class="portfolio__summary--item">
-                  Product details integrated from a web API through JavaScript
-                  fetch/async/await
-                </li>
-                <li class="portfolio__summary--item">
-                  Management of cart information across multiple components
-                  using React state hooks
-                </li>
-              </ul>
-              <div class="portfolio__source">
-                <a href="" class="portfolio__code btn">Code</a>
-                <a href="" class="portfolio__demo btn">Demo</a>
-              </div>
-            </div>
-            <img
-              src="img/shopping-demo.gif"
-              alt="Where's Narwhal"
-              class="portfolio__img"
-            />
-          </div>
-        </div>
-
-        <!-- Portfolio item 03 -->
-        <div class="portfolio__item">
-          <h3 class="portfolio__title">Weather Widget</h3>
-          <div class="portfolio__description">
-            <img
-              src="img/weather-demo.gif"
-              alt="Where's Narwhal"
-              class="portfolio__img"
-            />
-            <div class="portfolio__summary">
-              <h4>Project Features</h4>
-              <ul class="portfolio__summary--list">
-                <li class="portfolio__summary--item">
-                  City based weather shaped from JSON data obtained through Open
-                  Weather Map API
-                </li>
-                <li class="portfolio__summary--item">
-                  Custom validity on HTML input field to alert user of broken
-                  API city searches
-                </li>
-                <li class="portfolio__summary--item">
-                  Dark mode CSS for night time cities utilizing JavaScript Date
-                  object
-                </li>
-              </ul>
-              <div class="portfolio__source">
-                <a href="" class="portfolio__code btn">Code</a>
-                <a href="" class="portfolio__demo btn">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="#contact" class="btn">Contact Me</a>
-    </section>
-
-    <!-- About Me -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        The dev behind the code
-      </p>
-
-      <div class="about-me__body">
-        <p class="about-me__background">
-          I'm a web developer with a proficiency in product management. My
-          background in systems design and electrical engineering provide a
-          holistic and logical approach toward complex problem solving.
-        </p>
-        <p class="about-me__driven">
-          I'm driven by solutions that focus on providing the best user
-          experience while upholding code quality. I also embrace the updates in
-          technology that generate improvements in efficiency and productivity.
-        </p>
-
-        <p class="about-me__contact">
-          David is seeking new and exciting projects. Send him an
-          <a href="mailto:kirshon.david@gmail.com" class="about-me__link">
-            email
-          </a>
-          or
-          <a href="#contact" class="about-me__link">contact</a>
-          below!
-        </p>
-      </div>
-
-      <img
-        src="img/about-me_David.jpg"
-        alt="David ready for anything"
-        class="about-me__img"
-      />
-    </section>
-
-    <!-- Contact Me -->
-    <section class="contact-me" id="contact">
-      <h2 class="section_title section__title--contact">Contact Me</h2>
-
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/xpzbenaz"
-        method="POST"
-      >
-        <fieldset id="fs-frm-inputs">
-          <label class="contact-form__label" for="email">
-            <p>Email <span class="contact-form__label-required">*</span></p>
-            <input
-              type="email"
-              class="contact-form__input"
-              id="email"
-              name="email"
-              required
-            />
-          </label>
-          <label class="contact-form__label" for="message">
-            <p>Message <span class="contact-form__label-required">*</span></p>
-            <textarea
-              class="contact-form__input"
-              id="message"
-              name="message"
-              rows="5"
-              maxlength="1000"
-              required
-            ></textarea>
-          </label>
-          <input
-            type="hidden"
-            name="_subject"
-            id="email-subject"
-            value="dmkirshon: Contact Form Submission"
-          />
-        </fieldset>
-
-        <button class="btn contact-form__submit" type="submit">Send</button>
-      </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <a href="mailto:kirshon.david@gmail.com" class="footer__link"
-        >kirshon.david@gmail.com</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://github.com/dmkirshon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-github-square"></i>
-          </a>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/logo_kirshon.jpg" alt="logo" />
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <a href="#work" class="nav__link">My Work</a>
         </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://www.upwork.com/freelancers/~013863399e100b71cb"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="social-list__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewbox="0 0 70 70"
-              width="24"
-              height="auto"
-              fill="currentColor"
-            >
-              <path
-                d="M0 0v56.7h56.7V0H0zm20.3 14.6h5.6a48.4 48.4 0 0 0 5.6 12.1c1.6-5.5 5.6-9 10.9-9a11.3 11.3 0 0 1 0 22.5 14 14 0 0 1-7.7-2.2l-2.4 11.9h-5.7l3.5-16.3a51.5 51.5 0 0 1-4-6.7v2.5a10.9 10.9 0 0 1-21.8 0V14.7h5.4v14.6a5.3 5.3 0 1 0 10.6 0V14.6zm22.2 8.8c-4.1 0-5.4 4-5.8 6.4v.1l-.6 2.2a10.2 10.2 0 0 0 6.3 2.5 5.9 5.9 0 0 0 5.7-5.6 5.6 5.6 0 0 0-5.6-5.6z"
-              />
-            </svg>
-          </a>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About Me</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact Me</a>
         </li>
       </ul>
-    </footer>
+    </nav>
+  </header>
 
-    <script src="./js/index.js"></script>
-  </body>
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>David Kirshon</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">web developer</p>
+    <img src="img/Intro_David_square.jpg" alt="Image of David's head" class="intro__img" />
+  </section>
+
+  <!-- My Work -->
+
+  <section class="my-work" id="work">
+    <h2 class="section_title--work">My Work</h2>
+    <p class="section__subtitle--work">A selection of my projects</p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+      <div class="portfolio__item">
+        <h3 class="portfolio__title">Where's Narwhal</h3>
+        <div class="portfolio__layout">
+          <div class="portfolio__img">
+            <img src="img/narwhal-demo.gif" alt="Where's Narwhal demo" class="portfolio__img--source" />
+          </div>
+          <div class="portfolio__info">
+            <div class="portfolio__highlights">
+              <div class="portfolio__tech">
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">React</p>
+                  <span class="iconify" data-icon="logos:react"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">Firestore</p>
+                  <span class="iconify" data-icon="vscode-icons:file-type-firestore"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">Storage</p>
+                  <span class="iconify" data-icon="bi:cloud-download-fill"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">Hosting</p>
+                  <span class="iconify" data-icon="vscode-icons:file-type-light-firebasehosting"></span>
+                </div>
+              </div>
+              <p class="portfolio__summary">
+                This project is a take on the Where's Waldo photo search game.
+                In this version six narwhals are on vacation and the player
+                needs to find them all to win!
+              </p>
+            </div>
+            <div class="portfolio__source">
+              <a href="" class="portfolio__code btn">Code</a>
+              <a href="" class="portfolio__demo btn">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio item 02 -->
+      <div class="portfolio__item">
+        <h3 class="portfolio__title">Shopping Cart</h3>
+        <div class="portfolio__layout">
+          <div class="portfolio__img">
+            <img src="img/shopping-demo.gif" alt="Shopping Cart demo" class="portfolio__img--source" />
+          </div>
+          <div class="portfolio__info">
+            <div class="portfolio__highlights">
+              <div class="portfolio__tech">
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">React</p>
+                  <span class="iconify" data-icon="logos:react"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">React Router</p>
+                  <span class="iconify" data-icon="logos:react-router"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">Web API</p>
+                  <span class="iconify" data-icon="eos-icons:api"></span>
+                </div>
+              </div>
+              <p class="portfolio__summary">
+                Shopping Cart app that mimics an E-commerce store. Customers are able to add products to the cart and
+                review them before final checkout.
+              </p>
+            </div>
+            <div class="portfolio__source">
+              <a href="" class="portfolio__code btn">Code</a>
+              <a href="" class="portfolio__demo btn">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio item 03 -->
+      <div class="portfolio__item">
+        <h3 class="portfolio__title">Weather Widget</h3>
+        <div class="portfolio__layout">
+          <div class="portfolio__img">
+            <img src="img/weather-demo.gif" alt="Weather Widget demo" class="portfolio__img--source" />
+          </div>
+          <div class="portfolio__info">
+            <div class="portfolio__highlights">
+              <div class="portfolio__tech">
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">JavaScript</p>
+                  <span class="iconify" data-icon="logos:javascript"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">HTML</p>
+                  <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">CSS</p>
+                  <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
+                </div>
+                <div class="portfolio__badge">
+                  <p class="portfolio__badge--name">Web API</p>
+                  <span class="iconify" data-icon="eos-icons:api"></span>
+                </div>
+              </div>
+              <p class="portfolio__summary">
+                Weather app that uses fetch and async/await to grab data from the Open Weather Map API.
+                Formats the returned JSON data into a UI with a light/dark theme.
+              </p>
+            </div>
+            <div class="portfolio__source">
+              <a href="" class="portfolio__code btn">Code</a>
+              <a href="" class="portfolio__demo btn">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+  <!-- About Me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">
+      The dev behind the code
+    </p>
+
+    <div class="about-me__body">
+      <p class="about-me__background">
+        I'm a web developer with a proficiency in product management. My
+        background in systems design and electrical engineering provide a
+        holistic and logical approach toward complex problem solving.
+      </p>
+      <p class="about-me__driven">
+        I'm driven by solutions that focus on providing the best user
+        experience while upholding code quality. I also embrace the updates in
+        technology that generate improvements in efficiency and productivity.
+      </p>
+
+      <p class="about-me__contact">
+        David is seeking new and exciting projects. Send him an
+        <a href="mailto:kirshon.david@gmail.com" class="about-me__link">
+          email
+        </a>
+        or
+        <a href="#contact" class="about-me__link">contact</a>
+        below!
+      </p>
+    </div>
+
+    <img src="img/about-me_David.jpg" alt="David ready for anything" class="about-me__img" />
+  </section>
+
+  <!-- Contact Me -->
+  <section class="contact-me" id="contact">
+    <h2 class="section_title section__title--contact">Contact Me</h2>
+
+    <form class="contact-form" action="https://formspree.io/f/xpzbenaz" method="POST">
+      <fieldset id="fs-frm-inputs">
+        <label class="contact-form__label" for="email">
+          <p>Email <span class="contact-form__label-required">*</span></p>
+          <input type="email" class="contact-form__input" id="email" name="email" required />
+        </label>
+        <label class="contact-form__label" for="message">
+          <p>Message <span class="contact-form__label-required">*</span></p>
+          <textarea class="contact-form__input" id="message" name="message" rows="5" maxlength="1000"
+            required></textarea>
+        </label>
+        <input type="hidden" name="_subject" id="email-subject" value="dmkirshon: Contact Form Submission" />
+      </fieldset>
+
+      <button class="btn contact-form__submit" type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:kirshon.david@gmail.com" class="footer__link">kirshon.david@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/dmkirshon" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.upwork.com/freelancers/~013863399e100b71cb" target="_blank"
+          rel="noopener noreferrer">
+          <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" width="24" height="auto"
+            fill="currentColor">
+            <path
+              d="M0 0v56.7h56.7V0H0zm20.3 14.6h5.6a48.4 48.4 0 0 0 5.6 12.1c1.6-5.5 5.6-9 10.9-9a11.3 11.3 0 0 1 0 22.5 14 14 0 0 1-7.7-2.2l-2.4 11.9h-5.7l3.5-16.3a51.5 51.5 0 0 1-4-6.7v2.5a10.9 10.9 0 0 1-21.8 0V14.7h5.4v14.6a5.3 5.3 0 1 0 10.6 0V14.6zm22.2 8.8c-4.1 0-5.4 4-5.8 6.4v.1l-.6 2.2a10.2 10.2 0 0 0 6.3 2.5 5.9 5.9 0 0 0 5.7-5.6 5.6 5.6 0 0 0-5.6-5.6z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
