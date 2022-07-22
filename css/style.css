@@ -588,8 +588,10 @@ header {
   margin: 0 0.5em;
 }
 
-.social-list_link {
-  padding: 0.5em;
+.social-list__link {
+  display: flex;
+  border: 2px solid;
+  transform: scale(1.5);
 }
 
 /* Individual portfolio item styles */
