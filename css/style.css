@@ -452,7 +452,14 @@ header {
   margin: 0 auto;
 }
 
+.about-me__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .about-me__img {
+  margin-top: 1em;
   box-shadow: var(--bs-dark);
 }
 
